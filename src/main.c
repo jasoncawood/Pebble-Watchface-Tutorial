@@ -1,7 +1,10 @@
 #include <pebble.h>
 static Window *s_main_window;
+static TextLayer *s_time_layer;
 
 static void main_window_load(Window *window) {
+    // Create time TextLayer
+    s_time_layer = text_layer_create(GRect(0, 55, 144, 50));
     
 }
 
